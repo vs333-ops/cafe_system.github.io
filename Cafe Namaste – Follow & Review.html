@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafe Namaste – Follow & Review</title>
+<meta name="description" content="Find us on Instagram, TikTok, Facebook and leave a Google review.">
+<meta name="theme-color" content="#0E3B2C">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0E3B2C;--ink:#0A1F17;--paper:#F4FBF6;--sun:#FFD23F;--pink:#FF9EC0;--soft:#A9CDBB}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);background-image:radial-gradient(rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:22px 22px;color:var(--paper);font-family:"DM Sans",system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center;padding:34px 18px 44px}
+  main{width:100%;max-width:440px}
+  .hero{text-align:center}
+  .cup{width:150px;height:150px;margin:0 auto 6px;display:block;overflow:visible}
+  .steam path{fill:none;stroke:var(--paper);stroke-width:5;stroke-linecap:round;stroke-dasharray:46;stroke-dashoffset:46;opacity:0;animation:steam 3.2s ease-in-out infinite}
+  .steam path:nth-child(2){animation-delay:.5s}.steam path:nth-child(3){animation-delay:1s}
+  @keyframes steam{0%{stroke-dashoffset:46;opacity:0;transform:translateY(6px)}30%{opacity:.9}100%{stroke-dashoffset:0;opacity:0;transform:translateY(-8px)}}
+  h1{font:800 clamp(2.4rem,11vw,3.2rem)/.98 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}
+  .tag{color:var(--soft);margin:12px auto 0;line-height:1.5;max-width:30ch}
+
+  .review{display:block;position:relative;margin-top:28px;padding:22px 20px 20px;background:var(--sun);color:var(--ink);border:3px solid var(--ink);border-radius:22px;text-decoration:none;box-shadow:6px 6px 0 var(--ink);transform:rotate(-1.2deg);transition:transform .12s,box-shadow .12s}
+  .review:hover{transform:rotate(-1.2deg) translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+  .review:active{transform:rotate(-1.2deg) translate(5px,5px);box-shadow:1px 1px 0 var(--ink)}
+  .stars{display:flex;gap:6px;margin-bottom:12px}
+  .stars svg{width:34px;height:34px;fill:var(--ink)}
+  .review strong{display:block;font:800 1.6rem/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+  .review span{display:block;margin-top:6px;font-weight:500}
+  .badge{position:absolute;top:-14px;right:14px;background:var(--pink);border:3px solid var(--ink);border-radius:999px;padding:3px 12px;font-weight:700;font-size:.8rem;transform:rotate(4deg)}
+
+  .grid{list-style:none;padding:0;margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid li:last-child:nth-child(odd){grid-column:span 2}
+  .tile{display:flex;flex-direction:column;justify-content:space-between;min-height:132px;padding:16px;border:3px solid var(--ink);border-radius:22px;color:#fff;text-decoration:none;box-shadow:5px 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+  li:nth-child(odd) .tile{transform:rotate(1.2deg)}li:nth-child(even) .tile{transform:rotate(-1deg)}
+  .tile:hover{transform:translate(-2px,-2px) rotate(0);box-shadow:7px 7px 0 var(--ink)}
+  .tile:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--ink)}
+  .ico{width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.22);display:grid;place-items:center}
+  .ico svg{width:26px;height:26px}
+  .tile b{font:800 1.25rem "Bricolage Grotesque",sans-serif;letter-spacing:-.01em;display:block}
+  .tile small{opacity:.9;font-size:.82rem}
+  .ig{background:linear-gradient(135deg,#F9A03F 0%,#E1306C 55%,#7B3FE4 100%)}
+  .tt{background:#111}.tt .ico{background:#fff}.tt .ico svg{fill:#111}
+  .fb{background:#1877F2}
+  .mp{background:var(--paper);color:var(--ink)}.mp .ico{background:#EA4335;color:#fff}
+
+  .info{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .pill{padding:9px 16px;border:2px dashed var(--soft);border-radius:999px;color:var(--paper);font-size:.9rem;text-decoration:none}
+  a.pill:hover{background:rgba(255,255,255,.1)}
+  a:focus-visible{outline:3px solid var(--sun);outline-offset:4px}
+  @media (prefers-reduced-motion:reduce){.steam path{animation:none;opacity:.7;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <svg class="cup" viewBox="0 0 160 160" aria-hidden="true">
+      <g class="steam"><path d="M58 48c-8-8 8-14 0-24"/><path d="M80 48c-8-8 8-14 0-24"/><path d="M102 48c-8-8 8-14 0-24"/></g>
+      <ellipse cx="80" cy="140" rx="62" ry="10" fill="#0A1F17" opacity=".35"/>
+      <path d="M118 74h8a16 16 0 0 1 0 32h-12" fill="none" stroke="#FFD23F" stroke-width="9" stroke-linecap="round"/>
+      <path d="M32 58h92v36a40 40 0 0 1-40 40h-12a40 40 0 0 1-40-40z" fill="#F4FBF6" stroke="#0A1F17" stroke-width="4"/>
+      <path d="M32 80h92v12H32z" fill="#FF9EC0" stroke="#0A1F17" stroke-width="4"/>
+      <ellipse cx="78" cy="58" rx="46" ry="7" fill="#7A4A2B" stroke="#0A1F17" stroke-width="4"/>
+    </svg>
+    <h1 id="name"></h1>
+    <p class="tag" id="tagline"></p>
+  </header>
+  <div id="review"></div>
+  <ul class="grid" id="links"></ul>
+  <div class="info" id="info"></div>
+</main>
+
+<script>
+/* ============ EDIT ONLY THIS BLOCK ============ */
+const CONFIG = {
+  name: "Cafe Namaste",
+  tagline: "Fresh coffee and momo in the heart of Bharatpur.",
+  // Leave any link as "" to hide it.
+  googleReview: "https://g.page/r/YOUR-REVIEW-CODE/review",
+  instagram: "https://www.instagram.com/your_cafe",
+  tiktok: "https://www.tiktok.com/@your_cafe",
+  facebook: "https://www.facebook.com/your.cafe",
+  maps: "https://maps.app.goo.gl/YOUR-MAP-CODE",
+  phone: "+9779800000000",
+  hours: "Open daily, 8 AM – 9 PM"
+};
+/* ============================================== */
+
+const icons = {
+  instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="#fff"/></svg>',
+  tiktok: '<svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>',
+  facebook: '<svg viewBox="0 0 24 24" fill="#fff"><path d="M13.6 22v-8.2h2.8l.5-3.4h-3.3V8.2c0-1 .4-1.7 1.8-1.7h1.6V3.4c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.9H7.4v3.4h2.9V22z"/></svg>',
+  maps: '<svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7.5 7.5 0 0 0-7.5 7.5C4.5 15 12 22 12 22s7.5-7 7.5-12.5A7.5 7.5 0 0 0 12 2zm0 10.2a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z"/></svg>'
+};
+const star = '<svg viewBox="0 0 24 24"><path d="M12 1.8l3.1 6.7 7.3.9-5.4 5 1.4 7.2L12 18l-6.4 3.6L7 14.4 1.6 9.4l7.3-.9z"/></svg>';
+const $ = id => document.getElementById(id);
+
+$("name").textContent = CONFIG.name;
+$("tagline").textContent = CONFIG.tagline;
+document.title = CONFIG.name + " – Follow & Review";
+
+if (CONFIG.googleReview) {
+  $("review").innerHTML = '<a class="review" href="' + CONFIG.googleReview + '" target="_blank" rel="noopener">' +
+    '<span class="badge">Takes 30 seconds</span><div class="stars">' + star.repeat(5) + '</div>' +
+    '<strong>Loved your visit?</strong><span>Tap to leave a Google review</span></a>';
+}
+
+const items = [
+  ["instagram", "Instagram", "Daily specials", "ig"],
+  ["tiktok", "TikTok", "Cafe life, on video", "tt"],
+  ["facebook", "Facebook", "Events and news", "fb"],
+  ["maps", "Find us", "Open in Google Maps", "mp"]
+];
+$("links").innerHTML = items.filter(i => CONFIG[i[0]]).map(i =>
+  '<li><a class="tile ' + i[3] + '" href="' + CONFIG[i[0]] + '" target="_blank" rel="noopener">' +
+  '<span class="ico">' + icons[i[0]] + '</span><span><b>' + i[1] + '</b><small>' + i[2] + '</small></span></a></li>'
+).join("");
+
+let info = "";
+if (CONFIG.hours) info += '<span class="pill">' + CONFIG.hours + '</span>';
+if (CONFIG.phone) info += '<a class="pill" href="tel:' + CONFIG.phone + '">Call ' + CONFIG.phone + '</a>';
+$("info").innerHTML = info;
+</script>
+</body>
+</html>
